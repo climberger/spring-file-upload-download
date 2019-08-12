@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "fda379ac-25fe-42ab-ace0-7a6ff67105e7",
+		"name": "spring-upload",
+		"description": "This is a collection for demo and testing purposes of the spring-upload project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload as binary octet-stream",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/octet-stream",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": "/upload-file.txt",
+					"src": "/upload-file.txt"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/binaryUpload",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"binaryUpload"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "conte",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
