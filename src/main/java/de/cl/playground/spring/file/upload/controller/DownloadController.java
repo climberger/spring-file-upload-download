@@ -48,7 +48,7 @@ public class DownloadController {
         is.close();
         return ResponseEntity.ok().headers(responseHeaders).body(bytes);
     }
-    
+
     @GetMapping(value = "/binary", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public @ResponseBody  ResponseEntity<byte[]> getBinary() throws IOException {
         File file = new File("files/dummy.docx");
